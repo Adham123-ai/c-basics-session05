@@ -71,9 +71,21 @@ namespace c_basics_session05
             #region Q8
             //Given string genreText = "Science";, convert it into a Genre value using Enum.Parse() and
             // print the result.
-            string genreText = "Science";
-            enum_Genre g = (enum_Genre)Enum.Parse(typeof(enum_Genre), genreText);
-            Console.WriteLine(g);
+            /// string genreText = "Science";
+            ///enum_Genre g = (enum_Genre)Enum.Parse(typeof(enum_Genre), genreText);
+            ///Console.WriteLine(g);
+            #endregion
+            #region Q9
+            string genreText = "Mystery";
+
+            if (Enum.TryParse<enum_Genre>(genreText, out enum_Genre genre))
+            {
+                Console.WriteLine(genre);
+            }
+            else
+            {
+                Console.WriteLine("Unknown genre");
+            }
             #endregion
         }
     }
