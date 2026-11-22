@@ -62,11 +62,18 @@ namespace c_basics_session05
             #endregion
             #region Q7
             //Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it.
-            enum_Genre genre = enum_Genre.Fiction;
+            /// enum_Genre genre = enum_Genre.Fiction;
 
-            string result = genre.ToString();
+            ///string result = genre.ToString();
 
-            Console.WriteLine(result);
+            ///Console.WriteLine(result);
+            #endregion
+            #region Q8
+            //Given string genreText = "Science";, convert it into a Genre value using Enum.Parse() and
+            // print the result.
+            string genreText = "Science";
+            enum_Genre g = (enum_Genre)Enum.Parse(typeof(enum_Genre), genreText);
+            Console.WriteLine(g);
             #endregion
         }
     }
