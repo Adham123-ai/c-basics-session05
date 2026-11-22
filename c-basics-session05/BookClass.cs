@@ -7,7 +7,8 @@ namespace c_basics_session05
     #region
     internal class BookClass
     {
-        //  private string password = "secret";
+         private string password = "secret";
+        internal int copiesInStock = 5;
     #endregion
 
     }
