@@ -1,4 +1,5 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.Drawing;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace c_basics_session05
 {
@@ -17,15 +18,18 @@ namespace c_basics_session05
             #region Q2
             //Add an internal int copiesInStock = 5; field to Book. Print it from Main. Does it compile?
             //Why ?
-            BookClass c = new BookClass();
-            Console.WriteLine(c.copiesInStock);
-            //Yes, it compiles successfully because internal members can be accessed from anywhere within the same assembly.
-            
-
-
+            //BookClass c = new BookClass();
+            //Console.WriteLine(c.copiesInStock);
+            //Yes, it compiles successfully because internal members can be accessed from anywhere within the same assembly
+            #endregion
+            #region Q3
+           // Add a public string Title; field to Book.Set it and print it from Main.
+           BookClass d = new BookClass();
+            d.Title = "C#";
+            Console.WriteLine(d.Title);
 
 
             #endregion
         }
-    }
+}
 }
