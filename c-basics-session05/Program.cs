@@ -33,11 +33,18 @@ namespace c_basics_session05
             #region Q4
             //Declare an enum Genre { Fiction, NonFiction, Science }. Add a Genre property to Book,
             //assign it Genre.Science, and print it.
+            ///BookClass b = new BookClass();
+            /// b.Genre = enum_Genre.Science;
+            ///Console.WriteLine(b.Genre);
+            #endregion
+            #region Q5
+            //Using the Genre enum above, print the underlying int value of
+            //Genre.Fiction, Genre.NonFiction, and Genre.Science by casting each to int.
             BookClass b = new BookClass();
-
-            b.Genre = enum_Genre.Science;
-            Console.WriteLine(b.Genre);
-
+            b.Gerne = enum_Genre.Fiction;
+            Console.WriteLine((int)b.Genre);
+            b.Genre = enum_Genre.NonFiction;
+            Console.WriteLine((int)b.Genre);
 
             #endregion
         }
