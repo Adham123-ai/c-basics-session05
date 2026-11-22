@@ -41,7 +41,7 @@ namespace c_basics_session05
             //Using the Genre enum above, print the underlying int value of
             //Genre.Fiction, Genre.NonFiction, and Genre.Science by casting each to int.
             ///BookClass b = new BookClass();
-           /// b.Gerne = enum_Genre.Fiction;
+            /// b.Gerne = enum_Genre.Fiction;
             ///Console.WriteLine((int)b.Genre);
             ///b.Genre = enum_Genre.NonFiction;
             ///Console.WriteLine((int)b.Genre);
@@ -49,16 +49,24 @@ namespace c_basics_session05
             #endregion
             #region Q6
             //Given int genreNumber = 1;, cast it into a Genre value and print the result.
-           
-            
-            int genreNumber = 1;
-
-            enum_Genre g = (enum_Genre)genreNumber;
 
 
-            Console.WriteLine(g);
+            /// int genreNumber = 1;
+
+            /// enum_Genre g = (enum_Genre)genreNumber;
 
 
+            /// Console.WriteLine(g);
+
+
+            #endregion
+            #region Q7
+            //Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it.
+            enum_Genre genre = enum_Genre.Fiction;
+
+            string result = genre.ToString();
+
+            Console.WriteLine(result);
             #endregion
         }
     }
